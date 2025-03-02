@@ -22,7 +22,7 @@ console.log(list);
 const fullObject = {a: 1, b: 2, c: 3 }
 const newObj1 = {}
 for (const key1 in fullObject) {
-    //изначально key1 =а, fullObject[key1] = 1
+    // изначально key1 =а, fullObject[key1] = 1
     // перебираем объект "fullObject", ключ key1 (а это "а") в каждой итерации содержит одно из чисел в обьекте {a: 1, b: 2, c: 3 })
     newObj1[fullObject[key1]] = key1 // даннай строка под капотом newObj1[1] = key1, на каждом шаге когда перебираем
 
