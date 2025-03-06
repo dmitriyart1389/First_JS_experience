@@ -42,12 +42,14 @@ const num1 = numbers1.filter(number => number % 2 === 0);
 console.log( num1)
 
 //Task10 -   Найди сумму всех чисел в массиве nums.
-const nums = [1, 2, 3, 4, 5];
+const massiv = [1, 2, 3, 4, 5];
 let sum = 0;
-for (let i = 0; i < nums.length; i++) { //Так как nums.length возвращает количество элементов, i < nums.length означает: Продолжать цикл, пока i меньше количества элементов в массиве.
-    sum += nums[i]; // sum = sum + nums[i] - добавляем каждый элемент в sum
+for (let i = 0; i < massiv.length; i++) { //Так как nums.length возвращает количество элементов, i < nums.length означает: Продолжать цикл, пока i меньше количества элементов в массиве.
+     sum = sum + massiv[i] // sum += nums[i] - добавляем каждый элемент в sum
 }
 console.log(sum); // 15
+
+
 
 
 
