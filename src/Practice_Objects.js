@@ -33,4 +33,10 @@ for (const key1 in fullObject) {
 }
 console.log(newObj1);
 
-
+//Task4_array -   Create an array of numbers and write a function that returns the sum of all numbers.
+const massiv = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let i = 0; i < massiv.length; i++) { //Так как nums.length возвращает количество элементов, i < nums.length означает: Продолжать цикл, пока i меньше количества элементов в массиве.
+    sum = sum + massiv[i] // sum += nums[i] - добавляем каждый элемент в sum
+}
+console.log(sum); // 15
