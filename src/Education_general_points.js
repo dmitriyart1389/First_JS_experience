@@ -21,9 +21,9 @@
 // const num = Number(str)
 // console.log(num, typeof num)
 //
-// //ПРИМЕР3 - Преобразование типов данных
-// console.log(Number (true))
-// console.log(Boolean (1))
+//ПРИМЕР3 - Преобразование типов данных
+console.log(Number (true)) // Преобразование булевого значения true в число, равняется 1
+console.log(Boolean (1)) // Преобразование числа 1 в булевое значение, равняется true
 
 
 
@@ -52,6 +52,13 @@
 //     console.log("Доступ запрещён ❌");
 // }
 
+// let value = 100;
+// let strValue = String(value); // Преобразуем число в строку
+// console.log(strValue, typeof strValue); // "100" 'string'
+//
+// const mySet = new Set(); // Создаём пустой Set
+// const numbers = new Set([1, 2, 3, 3, 4, 5, 5]);
+// console.log(numbers); // Set(5) { 1, 2, 3, 4, 5 }
 
 
 
