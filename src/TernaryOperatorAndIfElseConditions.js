@@ -1,4 +1,6 @@
-//ОПЕРАТОР IF
+/////////ОПЕРАТОР IF//////////
+
+
 //Example1
 // const person = {
 //     age: 20
@@ -30,7 +32,18 @@
 //     console.log ("Child")
 // }
 
-//Example3
+//Example4
+// const year = 3000
+// if(year === 2025) {
+//     console.log("This is 2025")
+// } else if (year === 3000) { // "иначе если" год 3000
+//     console.log("This is future")
+// } else {
+//     console.log("This is past")
+// }
+
+
+//Example4
 // const a = true
 // const b = 10
 // const sumPositiveNumbers = (a, b) => {
@@ -47,7 +60,10 @@
 
 
 //ТЕРНАРНЫЙ ОПЕРАТОР
-// const value = 0
-// value
-// ? console.log ("Условия истинно")
-// : console.log ("Условие ложно")
+const year = 1000
+const value = year === 2025 //если это условие year === 2025 будет истино, то в переменной value будет текст  "This is start studing",
+  // в ином случае -  "This is not start studing"
+  ? "This is start studing"
+  : "This is not start studing";
+console.log(value);
+

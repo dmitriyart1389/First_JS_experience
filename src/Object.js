@@ -1,6 +1,48 @@
 //////////ОБЬЕКТЫ////////////
 
-//Пример 1 - создание обьекта + изменения свойства обьекта
+
+//Пример 1 - получение значений обьекта
+// const myCity  = {
+//     city: "Wroclaw",
+//     popular: true,
+//     country: "Poland"
+// }
+// console.log(myCity.city)
+
+
+// Пример1.1 - изменение свойства обьекта (Используя точечную запись можна менять значение свойств обьекта и создавать новые свойства)
+// const myCity  = {
+//     city: "Wroclaw",
+// }
+// myCity.city = "Krakow"
+// console.log(myCity)
+
+
+// Пример 1.2 - Мы не меняем значение переменной myCity, поскольку у нас const, а просто добавляем значение в обьект. Так делать можна когда const
+// const myCity  = {
+//     city: "Wroclaw",
+// }
+// myCity.people = "Angry"
+// myCity.number = 500000
+// console.log(myCity)
+
+// delete myCity.people // удаляем свойство people из обьекта myCity
+// console.log(myCity)
+
+// Пример 1.3 - Добавляем новое значение в обьект который ранее создан.
+// Нужно использовать квадратные скобки в том случае,если название свойства является значением той или иной переменной.
+// То есть нам нужно значение "town", которое является значением переменной yourCity сделать свойством обьекта myCity.
+// А если напишу myCity.yourCity , а не через квадратные скобки то создастся свойство которое называется yourCity,
+// но нам необходимо свойство "town"
+
+// const myCity  = {
+//     city: "Wroclaw",
+// }
+// const yourCity = "town" //create new variable
+// myCity [yourCity] = "Berlin"
+// console.log(myCity)
+
+//Пример 1.4 - создание обьекта + изменения свойства обьекта
 let obj1 = { value: 10 };
 let obj2 = obj1; // obj2 теперь ссылается на тот же объект, что и obj1
 console.log(obj1.value);
@@ -98,5 +140,63 @@ const girl = {
 const {name: boyName} = boy // в переменной boyName хранится значение свойства name из обьекта boy
 const{name: girlName} = girl // в переменной girlName хранится значение свойства name из обьекта girl
 console.log(boyName, girlName);
+
+
+//////МУТИРОВАНИЕ ОБЬЕКТОВ////////////
+//Пример 1 - Мутирование обьекта
+// const myCity  = {
+//     city: "Wroclaw",
+// }
+// myCity.city = "Gdansk"
+// myCity.people = "Angry"
+// myCity.number = 500000
+// console.log(myCity)
+
+//Пример 2 - Мутирование копий, Обе переменные person ссылаются на один и тот же объект в памяти и будут давать один и тот же результат.
+// const myCity  = {
+//     city: "Wroclaw",
+//     people: 1000
+// }
+// const myCity2 = myCity
+// myCity2.city = "Gdansk"
+// myCity2.people = "Angry"
+// myCity.number = 500000
+// console.log(myCity)
+
+
+//Как избежать мутаций (использовать Object.assign). Object.assign можна использовать когда нет вложенных обьектов
+// Пример 3
+//const myCity  = {
+//     city: "Wroclaw",
+//     people: 1000
+// }
+// const myCity2 = Object.assign({},myCity)
+
+// myCity2.city = "Gdansk"
+// myCity2.people = "Angry"
+// console.log(myCity2.city)
+// console.log(myCity.city)
+
+//Пример 3.1 - как избежать мутаций (можна использовать не Object.assign а троеточие {...myCity})
+// const myCity  = {
+//     city: "Wroclaw",
+//     people: 1000
+// }
+// const myCity2 = {...myCity}
+// myCity2.city = "Gdansk"
+// console.log(myCity2.city)
+// console.log(myCity.city)
+
+//Пример 3.2 - как избежать мутаций
+// const myCity  = {
+//     city: "Wroclaw",
+//     people: 1000
+// }
+// const myCity2 = JSON.parse(JSON.stringify(myCity))
+// myCity2.city = "Gdansk"
+// console.log(myCity2.city)
+// console.log(myCity.city)
+
+
 
 

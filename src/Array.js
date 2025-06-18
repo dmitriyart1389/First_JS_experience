@@ -1,6 +1,57 @@
-//МАССИВЫ
+/////МАССИВЫ///////
+
+
 // const firstArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]; //1й вариант создания
 // const secondArray = new Array(10); //1й вариант создания
+
+//Пример1 - работа с массивами, пробую разные методы массивов
+// const myArray = [10,20,55]
+// console.log(myArray)
+// console.log(myArray[1])
+
+// myArray[2] = 'abc'
+// console.log(myArray)
+// console.log(myArray[2])
+
+// myArray[3] = 'newElement'
+// console.log(myArray)
+// console.log(myArray[3])
+
+// myArray.push(65) //метод добавляет значение в конце массива
+// console.log(myArray)
+
+// myArray.pop(65)//метод удаляет последнее значение в конце массива
+// console.log(myArray)
+
+//Пример2 - методы добавление и удаление последних элементов массива
+// const myArray = [10,20,55]
+// console.log(myArray)
+
+// const removeElement = myArray.pop() //удаляет последний элемент массива
+// console.log(myArray)
+// console.log(removeElement) //выводит с конца удаленный элемент массива
+
+// myArray.unshift('first') //добавляет элемент в начало массива
+// console.log(myArray)
+// myArray.shift('first') //удаляет 1й элемент массива
+// console.log(myArray)
+
+// Пример3 - метод FOREACH, перебирает все элементы массива и возможно выполнить действия с этими элементами
+// const myArray = [10,20,55]
+// myArray.forEach(element => console.log(element)) //перебирает и выводит все элементы массива
+// console.log(myArray)
+// myArray.forEach(element => console.log(element+1)) //добавляем по единице к каждому элементы массива
+
+//Пример4 - метод МАР, перебирает все элементы массива и возращает новый массив (не меняют оригинальный массив)
+// const myArray = [10,20,55]
+// console.log(myArray)
+// const newArray = myArray.map(element => element+10) //перебираем и добавляем по единице к каждому элементы массива и возвращаем новый массив
+// console.log(newArray)
+// console.log(myArray)
+
+// const newArray1 = myArray.map( element => console.log( element+1))
+// console.log(newArray1)
+
 
 // const arr = [
 //     "Hi",

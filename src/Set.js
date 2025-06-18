@@ -6,6 +6,12 @@
 // set.add(user)//обьект user добавить в коллекцию set
 // console.log(set) // в консоли видим что set хранит один обьект
 
+//Пример 1 - создание коллекции Set, уникального набора значений
+// const mySet = new Set(); // Создаём пустой Set
+// const numbers = new Set([1, 2, 3, 3, 4, 5, 5]);
+// console.log(numbers); // Set(5) { 1, 2, 3, 4, 5 }
+
+
 //Пример1.1 - сделать из массива numbers массив уникальных значений
 const numbers = [1,2,2,3,3,4,5,6]
 const set = new Set()
@@ -14,6 +20,7 @@ for (const key of numbers) {
 }
 console.log(set) //результат : set состоит из 6 элементов , а не 8
 console.log(set.has(1)) // проверяем есть ли к коллекции заданный элемент, результат :  true
+
 
 //Пример1.2 - перебрать значение и получить вывод элементов
 for (const value of set.values()) {
