@@ -34,15 +34,15 @@
 
 
 // Пример5 - operator &&
-const moneyInWallet = 5;
-const priceOfCoffee = 3;
-const isStoreOpen = true;
-
-if(priceOfCoffee < moneyInWallet && isStoreOpen) {
-  console.log("Кофе куплен ✅");
-} else {
-  console.log("Кофе не куплен ❌");
-}
+// const moneyInWallet = 5;
+// const priceOfCoffee = 3;
+// const isStoreOpen = true;
+//
+// if(priceOfCoffee < moneyInWallet && isStoreOpen) {
+//   console.log("Кофе куплен ✅");
+// } else {
+//   console.log("Кофе не куплен ❌");
+// }
 
 
 // Пример5 - operator &&
@@ -51,11 +51,11 @@ console.log(result); // null (первое ложное значение)
 
 
 // Пример6 - operator ??
-const userName = null;
-const defaultName = "Гость";
-const nameToDisplay2 = userName || defaultName; //оператор || перед проверкой операндов приводит их к булеан типу и возвращает
-// значение первого истинного операнда или самый последний
-const nameToDisplay = userName ?? defaultName; // Если userName не null и не  undefined, то будет значение текущего операнда, иначе defaultName
-console.log(nameToDisplay); // "Гость"
-console.log(nameToDisplay2); // "Гость"
+// const userName = null;
+// const defaultName = "Гость";
+// const nameToDisplay2 = userName || defaultName; //оператор || перед проверкой операндов приводит их к булеан типу и возвращает
+// // значение первого истинного операнда или самый последний
+// const nameToDisplay = userName ?? defaultName; // Если userName не null и не  undefined, то будет значение текущего операнда, иначе defaultName
+// console.log(nameToDisplay); // "Гость"
+// console.log(nameToDisplay2); // "Гость"
 
